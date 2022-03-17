@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: 'PasswordModal',
+  name: 'DeviceInfo',
   data () {
     return {
       placement: 'right',
@@ -34,8 +34,6 @@ export default {
       memFree: 0,
       sysinfo: []
     }
-  },
-  created () {
   },
   filters: {
     toMB: function (value) {
@@ -60,7 +58,6 @@ export default {
 
         const idle1 = this.lastCPUTime[3]
         const idle2 = times[3]
-
         let total1 = 0
         let total2 = 0
 
@@ -90,6 +87,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-</style>
